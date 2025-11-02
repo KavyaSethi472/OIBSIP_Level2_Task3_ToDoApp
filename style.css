@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #333;
+}
+
+#themeToggle {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: #434190;
+}
+
+.filters {
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  background: #e2e8f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #5a67d8;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+li {
+  background: #f7f7f7;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+body.dark .container {
+  background: rgba(30, 30, 46, 0.95);
+  color: #f1f1f1;
+}
+
+body.dark h1 {
+  color: #f1f1f1;
+}
+
+body.dark li {
+  background: #252542;
+  color: #ddd;
+}
+
+body.dark .filter-btn {
+  background: #2a2a4a;
+  color: #fff;
+}
+
+body.dark .filter-btn.active {
+  background: #5a67d8;
+}
